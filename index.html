@@ -2,39 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="MAT Training App" />
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MAT Training</title>
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Mobility Assistance Technician (MAT) Training</h1>
-    <nav>
+  <header class="navbar">
+    <div class="brand">
+      <img src="icon-192.png" alt="MAT" onerror="this.style.display='none'"/>
+      <div>
+        <h1>Mobility Assistance Technician (MAT) Training</h1>
+        <small>Learn safe, compliant passenger transport skills</small>
+      </div>
+    </div>
+    <div class="actions">
       <button id="lang-en">EN</button>
       <button id="lang-es">ES</button>
       <button id="lang-ar">AR</button>
-    </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="course">
+  <main class="container">
+    <section id="course" class="card">
       <h2>Welcome to MAT Training</h2>
-      <p>Learn safe, compliant passenger transport skills.</p>
-      <button id="start-course">Start Course</button>
+      <p>This quick course covers lift safety, securement, and rider dignity.</p>
+      <button id="start-course" class="btn">Start Course</button>
     </section>
 
-    <section id="quiz" class="hidden">
+    <section id="quiz" class="card hidden">
       <h2>Quiz</h2>
       <div id="quiz-container"></div>
-      <button id="submit-quiz">Submit</button>
+      <button id="submit-quiz" class="btn">Submit</button>
+      <span id="quiz-result" class="pill"></span>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 MAT Training App</p>
-  </footer>
+  <footer class="footer">© <span id="year"></span> MAT Training</footer>
 
   <script src="app.js"></script>
 </body>
