@@ -1,24 +1,92 @@
+/* Reset & base styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
-header {
-  background: #004c97;
-  color: #fff;
-  padding: 10px;
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0ea5e9;
+  padding: 10px 20px;
+  color: white;
 }
-nav button {
-  margin: 5px;
+
+.brand {
+  display: flex;
+  align-items: center;
 }
-.hidden {
-  display: none;
+
+.brand img {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
 }
-main {
+
+.brand h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.brand small {
+  display: block;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.actions button {
+  background: white;
+  color: #0ea5e9;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.actions button:hover {
+  background: #e0f4fb;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: auto;
   padding: 20px;
 }
-footer {
-  background: #eee;
-  padding: 10px;
+
+/* Card style */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons */
+.btn {
+  background: #0ea5e9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.btn:hover {
+  background: #0284c7;
+}
+
+/* Footer */
+.footer {
   text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
 }
